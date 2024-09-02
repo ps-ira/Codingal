@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Arranging and Maping some numbers</h1>
+    <p>The numbers multiplied with 10:</p>
+    <p id="i"></p>
+    <button onclick="ascending()">Ascending Order</button>
+    <button onclick="descending()">Descending Order</button>
+    <p id="ii"></p>
+
+    <script>
+        var numbers = [13, 15, 43, 44, 8, 55, 31];
+
+        function myFunction(num) {
+            return num*10
+        }
+
+        function ascending() {
+            mnumbers.sort(function(a, b){return(a-b)});
+            document.getElementById("ii").innerHTML = mnumbers;
+        }
+
+        function descending() {
+            mnumbers.sort(function(a, b){return(b-a)});
+            document.getElementById("ii").innerHTML = mnumbers;
+        }
+
+         var mnumbers = numbers.map(myFunction);
+            document.getElementById("i").innerHTML = mnumbers;
+    </script>
+</body>
+</html>
