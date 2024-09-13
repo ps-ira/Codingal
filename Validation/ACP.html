@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+    <h2>
+        Login Form 
+    </h2>
+     <p>Insert all the data to log in:</p>
+     <fieldset>
+        <form name="f1" onsubmit="validateForm()">
+            <label >Name:</label>
+            <input placeholder="Enter Your Name" type="text" id="name" name="name"><br><br>
+            <label>Age:</label>
+            <input id="age" name="age" type="number" min="18" max="50" placeholder="Age"><br><br>
+            <input type="submit" name="submit" value="submit">
+                    <p id="message"></p>
+        </form>
+
+     </fieldset>
+
+     <script>
+        function validateForm(e) {
+                
+                var x = document.forms["f1"]["name"].value;
+                if (x == "") {
+                    alert("Name must be entered");
+                    return false;
+                }
+
+                var y = document.forms["f1"]["age"].value;
+                if (y == "") {
+                    alert("Enter your age")
+                    return false;
+                }
+
+        }
+     </script>
+</body>
+</html>
