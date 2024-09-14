@@ -1,0 +1,22 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #252525;
+    font-family: "Baloo Tamma 2", cursive;
+}
+
+.m-heading {
+    font-family: "Robot SLab", serif;
+}
+
+.navigation-link {
+    border: 2px solid transparent;
+}
+
+.navigation-link {
+    text-decoration: none;
+    
+
+}
