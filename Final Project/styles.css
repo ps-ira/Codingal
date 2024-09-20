@@ -3,8 +3,9 @@ html {
 }
 
 body {
-    background: #252525;
-    font-family: "Baloo Tamma 2", cursive;
+    color: rgb(139, 91, 139);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: lemonchiffon;
 }
 
 .m-heading {
@@ -17,7 +18,8 @@ body {
 
 .navigation-link {
     text-decoration: none;
-    border-bottom: 2px solid #f5ba09;
+    border-bottom: 2px solid palevioletred;
     transition: 0.5s ease;
 
 }
+
