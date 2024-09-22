@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+    <div class="wrapper">
+        <div class="container">
+            <h1>Calculator</h1>
+            <div class="row">
+                <input type="text" name="result" class="result" id="result" placeholder="Result" value="" readonly/>
+                <input type="button" value="+" onclick="setScreenValue('+')"/>
+                <input type="button" value="1" onclick="setScreenValue('1')"/>
+                <input type="button" value="2"  onclick="setScreenValue('2')"/>
+                <input type="button" value="3" onclick="setScreenValue('3')"/>
+                <input type="button" value="-" onclick="setScreenValue('-')"/>
+            </div>
+            <div class="row">
+                <input type="button" value="4" onclick="setScreenValue('4')"/>
+                <input type="button" value="5" onclick="setScreenValue('5')"/>
+                <input type="button" value="6" onclick="setScreenValue('6')"/>
+                <input type="button" value="x" onclick="setScreenValue('*')"/>
+            </div>
+            <div class="row">
+                <input type="button" value="7" onclick="setScreenValue('7')"/>
+                <input type="button" value="8" onclick="setSceenValue('8')"/>
+                <input type="button" value="9" onclick="setScreenValue('9')"/>
+                <input type="button" value="/" onclick="setScreenValue('/')"/>
+            </div>
+            <div class="row">
+                <input type="button" value="%" onclick="setScreenValue('%')"/>
+                <input type="button" value="0" onclick="setScreenValue('0')"/>
+                <input type="button" value="." onclick="setScreenValue('.')"/>
+                <input type="button" value="=" onclick="calculateResult()"/>
+            </div>
+            <div class="row">
+                <input type="button" value="CLEAR" onclick="clearScreen()" id="clear" class="clear-button"/>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    </body>
+</html>
